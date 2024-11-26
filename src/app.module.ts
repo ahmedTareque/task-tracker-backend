@@ -1,11 +1,11 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { UsersModule } from './users/users.module';
-import { TasksModule } from './tasks/tasks.module';
-import { SubtasksModule } from './subtasks/subtasks.module';
-import { CategoriesModule } from './categories/categories.module';
-import { TaskCategoryModule } from './task-category/task-category.module';
+import { UsersModule } from './modules/users/users.module';
+import { TasksModule } from './modules/tasks/tasks.module';
+import { SubtasksModule } from './modules/subtasks/subtasks.module';
+import { CategoriesModule } from './modules/categories/categories.module';
+import { TaskCategoryModule } from './modules/task-category/task-category.module';
 
 @Module({
   imports: [UsersModule, TasksModule, SubtasksModule, CategoriesModule, TaskCategoryModule],
